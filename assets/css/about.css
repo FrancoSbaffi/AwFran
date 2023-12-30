@@ -1,0 +1,399 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400;6..72,500;6..72,600&display=swap");
+
+/* GLOBAL SETTINGS */
+
+:root {
+  --white: #fff;
+  --light-black: #000000;
+  --border: #1b1b1b;
+  --red: #ff4d4d;
+  --pink: #fd3990;
+  --background-principal: #222222;
+  --background-secondary: #3e3e3e;
+  --background-a: #c4b6b6;
+  --background-border: #7a7a7a5e;
+  --background-border-1: #4b47475e;
+  --background-blur: #1615158c;
+  --color-lightgray: #E9EAEB;
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+  --font-secondary: "Newsreader", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+}
+
+
+
+/* SECTION */
+
+.content-about {
+  padding-left: 13%;
+  padding-right: 13%;
+}
+
+.about-title_section {
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-title {
+  font-size: 6rem;
+  font-weight: 450;
+}
+
+.content-hr {
+  position: relative;
+  width: 95%; 
+  margin: 50px auto; 
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--background-border);
+  width: 99%;
+}
+
+.circle {
+  position: absolute;
+  top: -50px;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--pink); 
+  z-index: 1;
+  animation: color-change 8s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: var(--pink);
+  }
+  50% {
+    background-color: var(--red);
+  }
+  100% {
+    background-color: var(--pink); 
+  }
+}
+
+
+.circle-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+  color: var(--white);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 3; }
+  .div2 { grid-area: 1 / 2 / 3 / 3; }
+
+.text-about_me1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 26%;
+  margin-left: 45px;
+  margin-top: 85px;
+}
+
+.text-about_me2 {
+  color: var(--background-border);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  width: 26%;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.dots {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: typing 1.5s steps(8, end) infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 1em; }
+}
+
+.sbaffi-about_picture {
+  width: 140%;
+  margin-left: -125px;
+  margin-top: 25px;
+}
+
+.something-more {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  font-size: 55px;
+  font-weight: 450;
+  margin-bottom: 35px;
+  margin-left: -10%;
+}
+
+
+.hr-flex {
+  margin-top: -10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  padding-top: 25px;
+  gap: 31px;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.number-flex {
+  color: var(--background-border-1);
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.title-flex {
+  color: var(--pink);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 50px;
+  padding-top: 15px;
+}
+
+.sub-title_flex {
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.footer-txt {
+  font-size: 13px;
+  letter-spacing: 1.1px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  .about-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content-image_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parent {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    grid-column-gap: 0px;
+  }
+
+  .text-about_me1,
+  .text-about_me2 {
+    width: auto; 
+    margin: 0 auto; 
+    padding-top: 10px;
+  }
+
+  .div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sbaffi-about_picture {
+    width: 120%; 
+    margin: 0 auto; 
+    padding-top: 300px;
+    order: -1; 
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .circle {
+    position: absolute;
+    top: -40px; 
+    left: 75%;
+    transform: translateX(50%); 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: var(--pink); 
+    z-index: 1; 
+  }
+  .circle-about{
+    font-size: 13.5px;
+    padding-top: 32px;
+    color: var(--white);
+  }
+}
+
+@media (max-width: 670px) {
+  .something-more {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 625px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .more-down-padding{
+    padding-top: 150px;
+  }
+  .text-about_me1,
+  .text-about_me2 {
+    font-size: 15px;
+  }
+  .sbaffi-about_picture {
+    width: 120%; 
+    margin: 0 auto; 
+    padding-top: 360px;
+    order: -1;
+  }
+  .something-more {
+    font-size: 31px;
+  }
+  .cursor {
+    display: none;
+  }
+  .circle {
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(50%); 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: var(--pink); 
+    z-index: 1; 
+  }
+}
+
+@media (max-width: 390px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+  .more-down-padding{
+    padding-top: 150px;
+  }
+  .text-about_me1,
+  .text-about_me2 {
+    font-size: 15px;
+  }
+  .sbaffi-about_picture {
+    width: 120%; 
+    margin: 0 auto; 
+    padding-top: 425px;
+    order: -1; 
+  }
+  .something-more {
+    font-size: 25px;
+  }
+  .title-flex {
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    font-size: 25px;
+  }
+  
+  .sub-title_flex {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .circle {
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(50%); 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: var(--pink); 
+    z-index: 1; 
+  }
+  .footer-txt {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .something-more {
+    font-size: 20px;
+  }
+}

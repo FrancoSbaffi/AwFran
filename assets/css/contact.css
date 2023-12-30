@@ -1,0 +1,28 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400;6..72,500;6..72,600&display=swap");
+
+/* GLOBAL SETTINGS */
+
+:root {
+  --white: #fff;
+  --light-black: #000000;
+  --border: #1b1b1b;
+  --red: #ff4d4d;
+  --pink: #fd3990;
+  --background-principal: #222222;
+  --background-secondary: #3e3e3e;
+  --background-a: #c4b6b6;
+  --background-border: #7a7a7a5e;
+  --background-border-1: #4b47475e;
+  --background-blur: #1615158c;
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+  --font-secondary: "Newsreader", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

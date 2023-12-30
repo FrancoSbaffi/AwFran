@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Franco Sbaffi</title>
+    <link rel="icon" href="../img/Icon.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="node_modules/three/build/three.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    
+    <div class="cursor"></div>
+
+    <!-- LOADER START -->
+
+    <div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+      <div class="loader-wrap">
+        <div class="loader-wrap-heading">
+          <span
+            ><h1 id="loader-message">
+              Get to know me a <i> little better </i>
+            </h1></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- LOADER END -->
+
+    <!-- START NAVBAR -->
+
+    <nav class="navbar"></nav>
+    <div class="nav">
+      <div class="nav-top">
+        <div class="more-links" id="lg">
+          <div class="col">
+            <div class="col-title">
+              <p data-section="projects1" data-value="projectsM">Projects</p>
+            </div>
+            <div class="link">
+              <a href="#" data-section="projects1" data-value="firstP"
+                >EC2 Instance</a
+              >
+            </div>
+            <div class="link">
+              <a href="#" data-section="projects1" data-value="secondP"
+                >CI/CD on Tencent Cloud</a
+              >
+            </div>
+            <div class="link">
+              <a href="#" data-section="projects1" data-value="thirdP"
+                >Advanced Services</a
+              >
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-title">
+              <p data-section="project1" data-value="contact">Contact</p>
+            </div>
+            <div class="link">
+              <a
+                href="https://www.linkedin.com/in/franco-sbaffi/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </div>
+            <div class="link">
+              <a href="mailto:sbaffids@gmail.com">Gmail</a>
+            </div>
+            <div class="link">
+              <a href="https://twitter.com/franrzsa" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <div class="nav-home">
+          <div class="nav-item" id="toggle">
+            <div class="hamburguer">
+              <i class="ph-light ph-list"></i>
+            </div>
+            <p>More</p>
+          </div>
+        </div>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="../../index.html">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="about.html">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="writings.html">Writings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END NAVBAR -->
+
+    <header class="container">
+      <span class="name"
+        ><a href="../../index.html" class="name-link">SB<b>AF</b>FI©</a></span
+      >
+      <img
+        src="../img/icon-wb.png"
+        alt="Icon brand by Franco Sbaffi"
+        class="logo-brand"
+      />
+    </header>
+
+    <div class="about-title_section content-about more-down-padding">
+      <span class="about-title">
+        Empowering businesses through cloud innovation.
+      </span>
+      <div class="content-hr">
+        <div class="circle"><span class="circle-about">About me</span></div>
+        <hr>
+      </div>
+    </div>
+    <div class="parent about-title_section content-about">
+      <div class="div1">
+        <span class="text-about_me1">I am an independent frontend developer, UI/UX designer and creator based in Buenos Aires, Argentina. <br> <br> I specialize in crafting elevated, intuitive, and minimalistic designs for startups and small businesses to help them stand out in the digital landscape with a powerful impact. 😎</span>
+        <br>
+        <span class="text-about_me2">Cloudy World<span class="dots">...</span></span>
+      </div>
+      <div class="div2 background-gray">
+          <img src="../img/Pictures/picture_about-front.png" alt="Picture of Sbaffi, Franco" class="sbaffi-about_picture">
+      </div>
+    </div>
+    <div class="about-title_section content-about more-low-padding">
+      <p class="something-more">I have experience in <span class="dots">...</span></p>
+    </div>
+    <div class="about-title_section content-about flex-container">
+      <div class="flex-items">
+        <span class="number-flex">01</span>
+        <hr class="hr-flex">
+        <p class="title-flex">Design</p>
+        <br>
+        <p class="sub-title_flex">With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.</p>
+      </div>
+      <div class="flex-items">
+        <span class="number-flex">02</span>
+        <hr class="hr-flex">
+        <p class="title-flex">Development</p>
+        <br>
+        <p class="sub-title_flex">I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.</p>
+      </div>
+      <div class="flex-items">
+        <span class="number-flex">03</span>
+        <hr class="hr-flex">
+        <p class="title-flex">The full package</p>
+        <br>
+        <p class="sub-title_flex">A complete website from concept to implementation, that's what makes me stand out. My great sense for design and my development skills enable me to create kick-ass projects.</p>
+      </div>
+   </div>    
+
+   <footer>
+    <div>
+      <p class="footer-txt">Designed & Built by Franco Sbaffi</p>
+    </div>
+   </footer>
+    
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const bodyScrollBar = Scrollbar.init(document.body, {
+        damping: 0.1,
+        delegateTo: document,
+        alwaysShowTracks: true,
+        speed: 0.2,
+      });
+      ScrollTrigger.scrollerProxy("body", {
+        scrollTop(value) {
+          if (arguments.length) {
+            bodyScrollBar.scrollTop = value;
+          }
+          return bodyScrollBar.scrollTop;
+        },
+      });
+      bodyScrollBar.addListener(ScrollTrigger.update);
+      ScrollTrigger.defaults({
+        scroller: document.body,
+      });
+      gsap.to(".text p", {
+        backgroundPositionX: "0%",
+        stagger: 1,
+        scrollTrigger: {
+          trigger: ".text p",
+          scrub: 1,
+          start: "top center",
+          end: "bottom top",
+        },
+      });
+    </script>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
